@@ -3,8 +3,8 @@ from models import HardwareProfile, SimulatorProfile
 
 @dataclass
 class SimulationEnv:
-  # this does not need to be stored, can this be a normal class
   
+  # this does not need to be stored, can this be a normal class
   hardware : HardwareProfile
   
   simulator : SimulatorProfile

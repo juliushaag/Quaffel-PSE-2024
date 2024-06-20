@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class QuafelAdmin(models.Model):
+class AdminAccount(models.Model):
     
   identifier = models.CharField(max_length=50, primary_key=True)
 

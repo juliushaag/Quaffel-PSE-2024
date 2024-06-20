@@ -1,9 +1,11 @@
 {% extends "default_template.html" %}
 
 {% block content %}
+{% if success %}
 
+{% else %}
 <div>
-  {{ graph_div|safe }}
-</div>
-
+  <p>{% info %}<p>
+<div>
+{% endif %}
 {% endblock %}

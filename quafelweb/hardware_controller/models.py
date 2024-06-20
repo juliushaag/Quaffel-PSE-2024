@@ -7,7 +7,12 @@ class HardwareProfile(models.Model):
 
   description = models.CharField(max_length=1000)
 
-  connection = models.CharField(max_length=100)
+  # clust-gpu://192.168.0.95:22
+  protocol = models.CharField(max_length=100)
+
+  ip_addr = models.IPAddressField()
+
+  port_addr = models.IntegerField()
 
 
 

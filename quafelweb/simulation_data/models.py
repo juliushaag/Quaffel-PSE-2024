@@ -1,7 +1,13 @@
 from django.db import models
 from hardware_controller.models import HardwareProfile
-from simulation_controller.models import SimulatorProfile
 
+
+#TODO do this from a conf file maybe even in the settings
+class SimulatorProfile(models.Model):
+
+  name = models.CharField(max_length=50)
+
+  version = models.CharField(max_length=50)
 
 
 class SimulationRun(models.Model):
